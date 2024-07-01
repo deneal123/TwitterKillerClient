@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import WallPage from './pages/WallPage';
 import './App.css';
 
+
+const router = createHashRouter([
+    {
+        element: <LoginPage />,
+        path: '/',
+    },
+    {
+        element: <RegisterPage />,
+        path: '/register',
+    },
+    {
+        element: <WallPage />,
+        path: '/wall',
+    }
+]);
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className='App-back'>
+            <RouterProvider router={router} />
+        </div>
+    );
 }
 
 export default App;

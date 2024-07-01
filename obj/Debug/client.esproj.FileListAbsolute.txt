@@ -1,0 +1,6 @@
+C:\App\OSPanel\domains\gentleman\client\obj\Debug\client.esproj.SuggestedBindingRedirects.cache
+C:\App\OSPanel\domains\gentleman\client\obj\Debug\client.esproj.CoreCompileInputs.cache
+C:\App\OSPanel\domains\twitterkiller\client\obj\Debug\client.esproj.SuggestedBindingRedirects.cache
+C:\App\OSPanel\domains\twitterkiller\client\obj\Debug\client.esproj.CoreCompileInputs.cache
+C:\App\ReactProject\domains\twitterkiller\client\obj\Debug\client.esproj.SuggestedBindingRedirects.cache
+C:\App\ReactProject\domains\twitterkiller\client\obj\Debug\client.esproj.CoreCompileInputs.cache

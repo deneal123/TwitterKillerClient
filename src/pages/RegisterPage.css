@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --index: calc(1vw + 1vh);
+    --index-height: calc(1vh);
+    --index-width: calc(1vw);
+    --theme-color: rgb(255, 4, 215);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-reg {
+    position: relative;
+    width: calc(var(--index-width) * 100);
+    height: calc(var(--index-height) * 100);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-video-1-reg {
+    position: absolute;
+    top: calc(var(--index-height) * 30);
+    left: calc(var(--index-width) * -17);
+    width: calc(var(--index-width) * 100);
+    height: calc(var(--index-height) * 100);
+    object-fit: cover;
+    z-index: 0;
+    animation: moveVideo1 10s linear infinite;
+}
+
+.background-video-1-2-reg {
+    position: absolute;
+    top: calc(var(--index-height) * 3);
+    left: calc(var(--index-width) * 38);
+    width: calc(var(--index-width) * 100);
+    height: calc(var(--index-height) * 100);
+    object-fit: cover;
+    transform: scaleX(-1);
+    z-index: 0;
+    animation: moveVideo2 10s linear infinite;
+}
+
+@keyframes moveVideo1 {
+    0% {
+        top: 0;
+        left: 100%;
+    }
+
+    25% {
+        top: 10%;
+        left: 70%;
+    }
+
+    50% {
+        top: 20%;
+        left: 40%;
+    }
+
+    75% {
+        top: 30%;
+        left: 20%;
+    }
+
+    100% {
+        top: 40%;
+        left: -20%;
+    }
+}
+
+@keyframes moveVideo2 {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    25% {
+        top: 0;
+        right: 50%;
+    }
+
+    50% {
+        top: 50%;
+        right: 50%;
+    }
+
+    75% {
+        top: 50%;
+        right: 0;
+    }
+
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+.container-register {
+    position: relative;
+    padding: calc(var(--index) * 1);
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 20);
+    border-radius: calc(var(--index) * 0.5);
+    background-color: rgba(17, 25, 30, 0.75);
+    backdrop-filter: blur(calc(var(--index) * 0.5)) saturate(180%);
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-title-reg {
+    font-size: calc(var(--index) * 1.5);
+    margin-bottom: calc(var(--index) * 1);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+.input-field-reg {
+    width: 80%;
+    height: calc(var(--index) * 1);
+    padding: calc(var(--index) * 0.5);
+    font-size: calc(var(--index) * 0.6);
+    margin-bottom: calc(var(--index) * 0.5);
+    border-radius: calc(var(--index) * 0.2);
+    border: calc(var(--index) * 0.07) solid var(--theme-color);
+    background: none;
+    color: aqua;
+}
+
+.register-button {
+    width: 30%;
+    font-size: calc(var(--index) * 0.6);
+    padding: calc(var(--index) * 0.5);
+    margin-bottom: calc(var(--index) * 1);
+    border-radius: calc(var(--index) * 0.2);
+    border: calc(var(--index) * 0.07) solid var(--theme-color);
+    background: none;
+    color: aqua;
+    cursor: pointer;
+}
